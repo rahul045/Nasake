@@ -12,7 +12,7 @@ with open('config.json','r') as c:
     params = json.load(c)["params"]
 # mail = Mail(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost/nasake"
-app.secret_key='super-secret-key'
+app.secret_key=''
 CORS(app, supports_credentials=True)
 db.init_app(app)
 
